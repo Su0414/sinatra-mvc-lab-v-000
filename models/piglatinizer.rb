@@ -23,9 +23,10 @@ class PigLatinizer
             str = "way"
           end
           str4 =  str3 + str1 + str
+          arr << str4
         end
       }
-    arr << str4
+
 end
     arr.join(" ")
   end
