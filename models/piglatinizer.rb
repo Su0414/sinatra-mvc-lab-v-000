@@ -1,4 +1,4 @@
-
+require 'pry'
 class PigLatinizer
   attr_accessor :text
 
@@ -13,6 +13,7 @@ class PigLatinizer
     i = 0
     words = str_words.split(" ")
     words.each do |word|
+      binding.pry
       word.each_char.with_index(1).map { |val,index|
         if 'aeiouAEIOU'.include?val
           i = index - 1
@@ -27,6 +28,7 @@ class PigLatinizer
         end
         str4 =  str3 + str1 + str
         arr << str4
+        binding.pry
 end
     arr.join(" ")
   end
