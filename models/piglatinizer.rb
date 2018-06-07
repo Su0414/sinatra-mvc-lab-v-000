@@ -17,11 +17,11 @@ class PigLatinizer
           break;
         end
       }
-  end
-    str1 = str_words.slice(0,i)
-    str2 = str_words.slice(i)
-    str3 = str_words.slice(i, str_words.length)
-
+  
+    str1 = word.slice(0,i)
+    str2 = word.slice(i)
+    str3 = word.slice(i, word.length)
+end
     arr = []
     if(i == 0)
       str = "way"
