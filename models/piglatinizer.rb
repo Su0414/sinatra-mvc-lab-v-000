@@ -11,12 +11,12 @@ class PigLatinizer
     i = 0
     words = str_words.split(" ")
     words.each do |word|
-    word.each_char.with_index(1).map { |val,index|
-      if 'aeiouAEIOU'.include?val
-        i = index - 1
-        break;
-      end
-    }
+      word.each_char.with_index(1).map { |val,index|
+        if 'aeiouAEIOU'.include?val
+          i = index - 1
+          break;
+        end
+      }
   end
     str1 = str_words.slice(0,i)
     str2 = str_words.slice(i)
