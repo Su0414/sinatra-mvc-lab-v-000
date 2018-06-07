@@ -14,7 +14,7 @@ class PigLatinizer
   def piglatinize(str_words)
     str = "ay"
     str_words.each_char.with_index(1).map { |val,index|
-      puts "index: #{index} for #{val}"
+      #puts "index: #{index} for #{val}"
       i = index
       if VOWELS.include?val
     }
@@ -26,4 +26,5 @@ class PigLatinizer
     arr << str3 << str1 << str2 << str
     arr.join
   end
+
 end
