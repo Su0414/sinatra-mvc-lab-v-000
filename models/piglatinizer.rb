@@ -27,6 +27,8 @@ class PigLatinizer
     str3 = str_words.slice(i, str_words.length)
 
     arr = []
+    if(i == 0)
+      str = "way"
     arr << str3 << str1 << str
     arr.join
   end
