@@ -12,18 +12,18 @@ class PigLatinizer
   end
 
   def piglatinize(str_words)
+    str = "ay"
+    str_words.each_char.with_index(1).map { |val,index|
+      puts "index: #{index} for #{val}"
+      i = index
+      if VOWELS.include?val
+    }
+    str1 = str_words.slice(0,i)
+    str2 = str_words.slice(i)
+    str3 = str_words.slice(i, str_words.length)
+
     arr = []
-    arr << number_of_words.split(" ")
-
-    binding.pry
-
-    arr.each_with_index do |word, index|
-      alpha = word.split('')
-      if alpha.scan(/[aeiou]/)
-
-      end
-
-    end
-
+    arr << str3 << str1 << str2 << str
+    arr.join
   end
 end
