@@ -27,9 +27,7 @@ class PigLatinizer
     end
     arr << str3 << str1 << str
 end
-
-
-    arr.join
+    arr.join(" ")
   end
 
 end
