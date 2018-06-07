@@ -19,6 +19,7 @@ class PigLatinizer
     str_words.each_char.with_index(1).map { |val,index|
       if VOWELS.include?val
         i = index - 1
+        break;
       end
     }
     str1 = str_words.slice(0,i)
