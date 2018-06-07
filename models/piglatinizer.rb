@@ -9,13 +9,15 @@ class PigLatinizer
   def piglatinize(str_words)
     str = "ay"
     i = 0
-    str_words = str_words.split(" ")
-    str_words.each_char.with_index(1).map { |val,index|
+    words = str_words.split(" ")
+    words.each do |word|
+    word.each_char.with_index(1).map { |val,index|
       if 'aeiouAEIOU'.include?val
         i = index - 1
         break;
       end
     }
+  end
     str1 = str_words.slice(0,i)
     str2 = str_words.slice(i)
     str3 = str_words.slice(i, str_words.length)
