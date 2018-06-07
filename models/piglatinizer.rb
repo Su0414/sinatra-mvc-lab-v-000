@@ -6,14 +6,14 @@ class PigLatinizer
     @text = text
   end
 
-  def piglatinize(str_words)
+  def piglatinize(word)
     arr = []
     arr2 = []
     str = "ay"
     i = 0
     #words = str_words.split(" ")
     #words.each do |word|
-      str_words.each_char.with_index(1).map { |val,index|
+      word.each_char.with_index(1).map { |val,index|
         if 'aeiouAEIOU'.include?val
           i = index - 1
           break;
