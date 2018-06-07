@@ -14,6 +14,7 @@ class PigLatinizer
   def piglatinize(str_words)
     str = "ay"
     i = 0
+    VOWELS = 'aeiouAEIOU'
     str_words.each_char.with_index(1).map { |val,index|
       #puts "index: #{index} for #{val}"
       i = index
