@@ -1,3 +1,5 @@
+require 'pry'
+
 class PigLatinizer
   attr_accessor :words
 
@@ -8,6 +10,8 @@ class PigLatinizer
   def piglatinize(str_words)
     arr = []
     arr << str_words.split(" ")
+    binding.pry
+
 
   end
 end
