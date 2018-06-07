@@ -7,6 +7,7 @@ class PigLatinizer
   end
 
   def piglatinize(str_words)
+    arr = []
     str = "ay"
     i = 0
     words = str_words.split(" ")
@@ -17,16 +18,17 @@ class PigLatinizer
           break;
         end
       }
-
+  
     str1 = word.slice(0,i)
     str2 = word.slice(i)
     str3 = word.slice(i, word.length)
-end
-    arr = []
     if(i == 0)
       str = "way"
     end
     arr << str3 << str1 << str
+end
+  
+    
     arr.join
   end
 
