@@ -18,7 +18,7 @@ class PigLatinizer
           break;
         end
       }
-  
+
     str1 = word.slice(0,i)
     str2 = word.slice(i)
     str3 = word.slice(i, word.length)
@@ -27,8 +27,8 @@ class PigLatinizer
     end
     arr << str3 << str1 << str
 end
-  
-    
+
+
     arr.join
   end
 
