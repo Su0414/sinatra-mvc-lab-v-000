@@ -11,9 +11,9 @@ class PigLatinizer
     arr2 = []
     str = "ay"
     i = 0
-    words = str_words.split(" ")
-    words.each do |word|
-      word.each_char.with_index(1).map { |val,index|
+    #words = str_words.split(" ")
+    #words.each do |word|
+      str_words.each_char.with_index(1).map { |val,index|
         if 'aeiouAEIOU'.include?val
           i = index - 1
           break;
@@ -29,7 +29,7 @@ class PigLatinizer
         arr << str4
 
 
-end
+#end
     arr.join(" ")
   end
 
