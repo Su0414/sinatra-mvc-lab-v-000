@@ -13,10 +13,9 @@ class PigLatinizer
   def piglatinize(str_words)
     str = "ay"
     i = 0
-    VOWELS = 'aeiouAEIOU'
-
+    
     str_words.each_char.with_index(1).map { |val,index|
-      if VOWELS.include?val
+      if 'aeiouAEIOU'.include?val
         i = index - 1
         break;
       end
