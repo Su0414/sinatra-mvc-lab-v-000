@@ -6,10 +6,6 @@ class PigLatinizer
     @text = text
   end
 
-  def number_of_words
-    words = text.split(" ")
-  end
-
   def piglatinize(str_words)
     str = "ay"
     i = 0
