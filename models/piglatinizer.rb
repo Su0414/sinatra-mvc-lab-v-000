@@ -8,6 +8,7 @@ class PigLatinizer
 
   def piglatinize(str_words)
     arr = []
+    arr2 = []
     str = "ay"
     i = 0
     words = str_words.split(" ")
@@ -25,7 +26,8 @@ class PigLatinizer
     if(i == 0)
       str = "way"
     end
-    arr << str3 << str1 << str
+    arr2 << str3 << str1 << str
+    arr <<
 end
     arr.join(" ")
   end
