@@ -29,6 +29,7 @@ class PigLatinizer
     arr = []
     if(i == 0)
       str = "way"
+    end
     arr << str3 << str1 << str
     arr.join
   end
