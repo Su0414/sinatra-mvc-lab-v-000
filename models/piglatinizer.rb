@@ -15,6 +15,7 @@ class PigLatinizer
     str = "ay"
     i = 0
     VOWELS = 'aeiouAEIOU'
+
     str_words.each_char.with_index(1).map { |val,index|
       if VOWELS.include?val
         i = index - 1
